@@ -1,51 +1,61 @@
 'use client';
 
-import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowRight, Github, Linkedin, Mail, AlertCircle } from 'lucide-react';
 import Image from 'next/image';
 
 export function Hero() {
   return (
-    <section className="min-h-screen flex items-center justify-center pt-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background to-background">
-      <div className="max-w-5xl mx-auto">
+    <section className="relative min-h-screen flex items-center justify-center pt-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background to-background overflow-hidden">
+      {/* Urgent Banner */}
+      <div className="absolute top-0 left-0 right-0 bg-red-950/20 border-b border-red-500/30 animate-pulse">
+        <div className="max-w-7xl mx-auto px-4 py-3 flex items-center gap-2 justify-center">
+          <AlertCircle className="w-4 h-4 text-red-500 flex-shrink-0" />
+          <span className="text-xs sm:text-sm text-red-300 font-semibold">
+            EU AI Act enforcement: August 2026 · 134 days · 10,000+ companies need compliance
+          </span>
+        </div>
+      </div>
+
+      <div className="max-w-5xl mx-auto mt-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div>
             {/* Badge */}
             <div className="mb-8 inline-block">
               <span className="px-4 py-1.5 rounded-full text-sm font-medium bg-accent/10 text-accent border border-accent/20">
-                Agentic AI Architect
+                AI Systems Engineer
               </span>
             </div>
 
             {/* Main Heading */}
-            <h1 className="text-4xl sm:text-5xl lg:text-5xl font-bold tracking-tight mb-6 text-balance">
-              Building <span className="text-accent">Self-Correcting Systems</span>
+            <h1 className="text-4xl sm:text-5xl lg:text-5xl font-bold tracking-tight mb-4 text-balance">
+              <span className="text-foreground">LangGraph · RAG · MCP · LLMOps</span>
               <br />
-              <span className="text-foreground">That Validate Themselves</span>
+              <span className="text-accent">Agentic Pipelines</span>
             </h1>
 
             {/* Subheading */}
-            <p className="text-lg sm:text-xl text-muted-foreground mb-8 leading-relaxed">
-              I design agentic systems with built-in validation loops that continuously correct themselves — connecting enterprise data sources, ML models, and LLM agents into observable, production-ready pipelines. Specializing in RAG, Multi-Agent Orchestration, MCP, and LLMOps.
+            <p className="text-lg sm:text-xl text-muted-foreground mb-8 leading-relaxed font-medium">
+              I build production AI systems that validate their own outputs — observable, self-correcting, cryptographically proven.
             </p>
 
             {/* Stats */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 mb-12">
               <div>
-                <div className="text-2xl sm:text-3xl font-bold text-accent">35%</div>
-                <div className="text-xs sm:text-sm text-muted-foreground mt-1">Hallucination Reduction</div>
+                <div className="text-2xl sm:text-3xl font-bold text-accent">€0</div>
+                <div className="text-xs sm:text-sm text-muted-foreground mt-1">Audit Cost</div>
               </div>
               <div>
-                <div className="text-2xl sm:text-3xl font-bold text-accent">42%</div>
-                <div className="text-xs sm:text-sm text-muted-foreground mt-1">Cost Savings</div>
+                <div className="text-2xl sm:text-3xl font-bold text-accent">48min</div>
+                <div className="text-xs sm:text-sm text-muted-foreground mt-1">vs 6 Weeks</div>
               </div>
               <div>
-                <div className="text-2xl sm:text-3xl font-bold text-accent">234ms</div>
-                <div className="text-xs sm:text-sm text-muted-foreground mt-1">Avg Latency</div>
+                <div className="text-2xl sm:text-3xl font-bold text-accent">SHA-256</div>
+                <div className="text-xs sm:text-sm text-muted-foreground mt-1">Proof</div>
               </div>
               <div>
-                <div className="text-2xl sm:text-3xl font-bold text-accent">5</div>
-                <div className="text-xs sm:text-sm text-muted-foreground mt-1">Systems (Orion)</div>
+                <div className="text-2xl sm:text-3xl font-bold text-accent">6</div>
+                <div className="text-xs sm:text-sm text-muted-foreground mt-1">Production Systems</div>
               </div>
             </div>
 

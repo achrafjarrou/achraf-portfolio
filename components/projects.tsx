@@ -105,41 +105,48 @@ const projects = [
   },
   {
     id: 2,
-    title: 'KAIROS — Autonomous AI Governance Runtime',
+    title: 'THEMIS — Autonomous EU AI Act Compliance Intelligence',
     flagship: true,
     isNew: true,
-    subtitle: 'Self-Proving · Self-Correcting · EU AI Act Native',
+    subtitle: 'SHA-256 Proof · Multi-Framework · Live Production',
     description:
-      'Enterprise multi-agent pipeline for documentary intelligence across Finance, Legal, and Healthcare with automated ROI measurement, self-red-teaming, and EU AI Act compliance reporting. Combines ColPali visual embeddings, DSPy automated prompt optimization, and Temporal.io durable workflows.',
+      'Production multi-agent system. 6 weeks of manual EU AI Act audit → 48 minutes automated. Generates SHA-256 EvidenceChain™ per compliance decision — the only system on market with cryptographic audit proof. Analyzes 85 EU AI Act articles + GDPR + NIST AI RMF simultaneously.',
     fullDescription:
-      'KAIROS is a production-grade autonomous AI governance system that processes complex documents (PDFs, forms, reports) while maintaining full EU AI Act compliance. The system combines ColPali visual embeddings for PDF understanding, DSPy automated prompt optimization achieving 15% accuracy gains, and Temporal.io durable workflows for crash-resistant operations. Built-in Garak red-teaming runs 400+ attack probes automatically, while NeMo Guardrails filters outputs in real-time. Generates complete EU AI Act compliance dossiers automatically.',
+      'THEMIS is the production-grade EU AI Act compliance engine. It processes regulatory documents and AI systems through 6-node LangGraph pipelines, generating SHA-256 EvidenceChain™ for every compliance decision. Uses HyDE + RRF + CrossEncoder for RAG, Qdrant vector indexing of 96 regulatory articles, with live SSE streaming and WebSocket HITL interrupts. Built on Groq for sub-2min processing. Live on IBM watsonx.ai TechDoc validation.',
     technologies: [
-      'ColPali',
-      'DSPy',
-      'Temporal.io',
       'LangGraph',
-      'Garak',
-      'RAGAS',
-      'NeMo Guardrails',
+      'Groq',
+      'HyDE',
+      'RRF',
+      'CrossEncoder',
       'Qdrant',
-      'PostgreSQL',
-      'Neo4j',
       'FastAPI',
-      'FastMCP',
-      'OpenTelemetry',
-      'Kubernetes',
+      'React 18',
+      'SHA-256',
+      'SSE',
+      'WebSocket',
+      'PostgreSQL',
     ],
     highlights: [
-      'ColPali visual PDF embeddings',
-      'DSPy +15% accuracy gains',
-      'Garak 400+ automated probes',
-      'Temporal.io durable workflows',
-      'EU AI Act automated compliance',
-      'Self-red-teaming',
-      'Multi-modal (text + images + tables)',
+      'EvidenceChain™ SHA-256 — unique on market',
+      'Multi-framework (EU AI Act + GDPR + NIST)',
+      '6-node LangGraph pipeline',
+      '96 articles indexed',
+      'Live SSE streaming',
+      'HITL interrupt/resume',
+      '~2 minute end-to-end',
     ],
     github: '#',
-    live: '#',
+    live: 'https://themis-ui-dusky.vercel.app',
+    apiDocs: 'https://achrafjarrou-themis.hf.space/docs',
+    liveMetrics: {
+      articles: '13/13',
+      evidenceChains: '12 verified',
+      sha256: 'integrity=True',
+      score: '50/100',
+      time: '~2 minutes',
+      hash: '3034e13f69cf2c99',
+    },
   },
 
 ];
@@ -226,6 +233,43 @@ export function Projects() {
                 </div>
               </div>
 
+              {/* Live Metrics (THEMIS specific) */}
+              {project.liveMetrics && (
+                <div className="p-8 bg-card/30 border-t border-border/30">
+                  <div className="font-mono text-xs text-muted-foreground space-y-1.5 bg-background/50 p-4 rounded-lg border border-border/30 overflow-x-auto">
+                    <div className="flex justify-between">
+                      <span>LIVE — IBM watsonx.ai TechDoc</span>
+                      <span className="text-green-500">●</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span>Articles</span>
+                      <span className="text-accent">{project.liveMetrics.articles} ✓</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span>EvidenceChains</span>
+                      <span className="text-accent">{project.liveMetrics.evidenceChains}</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span>SHA-256</span>
+                      <span className="text-accent">{project.liveMetrics.sha256}</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span>Score</span>
+                      <span className="text-accent">{project.liveMetrics.score}</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span>Time</span>
+                      <span className="text-accent">{project.liveMetrics.time}</span>
+                    </div>
+                    <div className="flex justify-between text-green-500">
+                      <span>hash</span>
+                      <span>=</span>
+                      <span>{project.liveMetrics.hash} ✓</span>
+                    </div>
+                  </div>
+                </div>
+              )}
+
               {/* CTA Footer */}
               <div className="flex items-center justify-between p-8 bg-card/50 border-t border-border/30">
                 <div className="flex gap-3">
@@ -249,6 +293,16 @@ export function Projects() {
                     >
                       <ExternalLink size={16} />
                       Live Demo
+                    </a>
+                  )}
+                  {project.apiDocs && (
+                    <a
+                      href={project.apiDocs}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-card border border-border hover:border-accent/50 hover:bg-accent/10 transition-all text-sm font-medium"
+                    >
+                      API Docs
                     </a>
                   )}
                 </div>

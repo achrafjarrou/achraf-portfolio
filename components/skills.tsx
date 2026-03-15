@@ -10,6 +10,9 @@ export function Skills() {
         'CrewAI (Multi-Agents)',
         'Model Context Protocol (MCP)',
         'FastMCP Server Development',
+        'THEMIS (EU AI Act Automation)',
+        'EvidenceChain™ Architecture',
+        'Multi-Framework Compliance',
         'LangSmith (Observability)',
         'Langfuse (Production Traces)',
       ],
@@ -17,9 +20,12 @@ export function Skills() {
     {
       title: 'RAG & Vector Search',
       skills: [
+        'HyDE (Hypothetical Document Embeddings)',
+        'Reciprocal Rank Fusion (RRF)',
+        'CrossEncoder Reranking',
+        'Compliance RAG',
         'Advanced RAG Patterns',
         'Query Expansion',
-        'Parent-Document Retrieval',
         'Hybrid Search (BM25 + Vector)',
         'Pinecone, Qdrant, ChromaDB',
       ],
@@ -54,6 +60,17 @@ export function Skills() {
         'Redis Semantic Cache',
         'Microservices Architecture',
         'RESTful API Design',
+      ],
+    },
+    {
+      title: 'Evaluation & Trust',
+      skills: [
+        'RAGAS (RAG Evaluation)',
+        'Faithfulness Scoring',
+        'HITL Workflows',
+        'Garak Red-Teaming',
+        'SHA-256 Integrity',
+        'Langfuse',
       ],
     },
     {
