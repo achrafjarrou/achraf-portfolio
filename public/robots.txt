@@ -1,0 +1,18 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /.next/
+
+# Specific bot rules
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Sitemap location
+Sitemap: https://achraf-jarrou.com/sitemap.xml
+
+# Crawl delay (optional)
+Crawl-delay: 1

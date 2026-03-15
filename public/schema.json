@@ -1,0 +1,50 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "name": "Achraf Jarrou - Agentic AI Architect",
+  "url": "https://achraf-jarrou.com",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "Achraf Jarrou",
+    "url": "https://achraf-jarrou.com",
+    "sameAs": [
+      "https://github.com/achrafjarrou",
+      "https://www.linkedin.com/in/achraf-jarrou-4394bb342/"
+    ],
+    "jobTitle": "Agentic AI Architect",
+    "description": "Agentic AI Architect specializing in self-correcting systems, RAG, LLMOps, and production-grade AI systems that validate themselves",
+    "image": "https://achraf-jarrou.com/achraf-profile.jpg",
+    "email": "achraf.jarrou2002@gmail.com",
+    "telephone": "+212697838050",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "MA",
+      "addressLocality": "Rabat",
+      "addressRegion": "Rabat-Salé-Zemmour-Zaër"
+    },
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Self-Employed",
+      "url": "https://achraf-jarrou.com"
+    },
+    "knowsAbout": [
+      "Agentic AI",
+      "RAG Systems",
+      "LLMOps",
+      "LangGraph",
+      "Self-Correcting Systems",
+      "Multi-Agent Architecture",
+      "Machine Learning",
+      "Python",
+      "FastAPI",
+      "PostgreSQL",
+      "Data Sovereignty"
+    ],
+    "award": [
+      "ESI Professional Degree in Information Systems Engineering (2025)",
+      "Advanced Certification in AI/ML",
+      "LangGraph Expertise Certification",
+      "Production AI Architecture Certification"
+    ]
+  }
+}
