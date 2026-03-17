@@ -1,40 +1,48 @@
 import { Navigation } from '@/components/navigation';
-import { Hero } from '@/components/hero';
-import { About } from '@/components/about';
-import { Projects } from '@/components/projects';
-import { WhatIBuild } from '@/components/what-i-build';
-import { Skills } from '@/components/skills';
+import { HeroPremium } from '@/components/hero-premium';
+import { ThemisShowcase } from '@/components/themis-showcase';
+import { TechnicalArsenal } from '@/components/technical-arsenal';
 import { Experience } from '@/components/experience';
 import { Contact } from '@/components/contact';
 import { Footer } from '@/components/footer';
 
 export const metadata = {
-  title: 'Achraf Jarrou | Agentic AI Architect | Self-Correcting AI Systems',
+  title: 'Achraf Jarrou — Agentic AI Engineer · Verifiable Systems · EU AI Act',
   description:
-    'Achraf Jarrou - Agentic AI Architect building self-correcting systems with validation loops. Expert in RAG, LLMOps, and production-grade AI. Reducing hallucinations by 35%, costs by 42%. Available for international CDI.',
+    'Agentic AI Engineer building autonomous systems that prove their own reasoning cannot be altered. LangGraph · RAG · MCP · LLMOps. THEMIS: EU AI Act compliance intelligence. Based in Casablanca, Morocco.',
   keywords: [
     'Achraf Jarrou',
-    'Agentic AI Architect',
-    'Self-Correcting Systems',
-    'RAG Architecture',
+    'Agentic AI',
+    'LangGraph',
+    'EU AI Act',
+    'MCP Protocol',
+    'A2A Protocol',
     'LLMOps',
-    'AI Agent Systems',
-    'Production AI',
+    'AI Agent Orchestration',
+    'RAG',
+    'Verifiable AI',
+    'SHA-256 Audit',
   ],
   openGraph: {
-    title: 'Achraf Jarrou | Agentic AI Architect',
+    title: 'Achraf Jarrou — Agentic AI Engineer',
     description:
-      'Building self-correcting AI systems with validation loops that validate themselves. Expert in production-grade AI architecture.',
+      'Building autonomous systems that prove their own reasoning cannot be altered. THEMIS: EU AI Act compliance intelligence.',
     url: 'https://achraf-jarrou.com',
     type: 'website',
     images: [
       {
-        url: 'https://achraf-jarrou.com/achraf-profile.jpg',
-        width: 400,
-        height: 500,
-        alt: 'Achraf Jarrou - Agentic AI Architect',
+        url: 'https://achraf-jarrou.com/themis-landing.jpg',
+        width: 1200,
+        height: 800,
+        alt: 'THEMIS - Autonomous EU AI Act Compliance Intelligence',
       },
     ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Achraf Jarrou — Agentic AI Engineer',
+    description: 'Building autonomous systems that prove their own reasoning cannot be altered.',
+    images: ['https://achraf-jarrou.com/themis-landing.jpg'],
   },
 };
 
@@ -42,11 +50,9 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-background">
       <Navigation />
-      <Hero />
-      <About />
-      <Projects />
-      <WhatIBuild />
-      <Skills />
+      <HeroPremium />
+      <ThemisShowcase />
+      <TechnicalArsenal />
       <Experience />
       <Contact />
       <Footer />
