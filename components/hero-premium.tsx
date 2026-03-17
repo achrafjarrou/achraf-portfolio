@@ -18,11 +18,9 @@ export function HeroPremium() {
             <h1 className="text-5xl sm:text-6xl font-bold tracking-tight mb-6 leading-tight font-sans">
               <span className="text-foreground">Agentic AI</span>
               <br />
-              <span className="text-foreground">Engineer</span>
-              <br />
               <span className="text-accent relative">
                 Engineer
-                <span className="absolute bottom-1 left-0 right-0 h-1 bg-accent/30"></span>
+                <span className="absolute bottom-1 left-0 right-0 h-1 bg-accent"></span>
               </span>
             </h1>
 

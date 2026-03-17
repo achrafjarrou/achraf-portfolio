@@ -1,6 +1,7 @@
 import { Navigation } from '@/components/navigation';
 import { HeroPremium } from '@/components/hero-premium';
 import { ThemisShowcase } from '@/components/themis-showcase';
+import { ProjectsSection } from '@/components/projects-section';
 import { TechnicalArsenal } from '@/components/technical-arsenal';
 import { Experience } from '@/components/experience';
 import { Contact } from '@/components/contact';
@@ -52,6 +53,7 @@ export default function Home() {
       <Navigation />
       <HeroPremium />
       <ThemisShowcase />
+      <ProjectsSection />
       <TechnicalArsenal />
       <Experience />
       <Contact />

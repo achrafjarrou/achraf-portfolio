@@ -4,94 +4,40 @@ import { Badge } from '@/components/ui/badge';
 
 const experiences = [
   {
-    title: 'Founder & Chief Architect',
-    company: 'AEGIS – Authentic Interview Intelligence',
-    period: '2025 - Present',
-    type: 'SaaS Platform',
-    isNew: true,
-    isFlagship: true,
+    title: 'AI Systems Architect — Production Projects',
+    company: 'Independent',
+    period: '2026 - Present',
     description: [
-      'Built production SaaS platform combining GPT-4o streaming, 8-vector anti-cheating system, and ML-calibrated scoring pipeline from zero to market-ready in 3 months',
-      'Architected real-time WebSocket sessions with PostgreSQL state persistence, FastAPI async backend, and React 18 SPA frontend—processing concurrent interview streams with sub-100ms latency',
-      'Engineered ML bias correction pipeline using scikit-learn, eliminating known GPT-4o scoring biases with statistical calibration (μ: 72→65, σ: 15)',
-      'Deployed zero-cost production stack: Netlify (frontend 100GB/month), Render (backend 750h/month), Supabase (500MB PostgreSQL)—full enterprise infrastructure with zero overhead',
+      'Architected 4 production AI systems (THEMIS, AEGIS, Orion, Nexus AI) handling compliance automation, interview proctoring, and multi-agent orchestration',
+      'Engineered LangGraph pipelines with HITL breakpoints, PostgreSQL state persistence, real-time observability via Langfuse and Groq inference optimization',
+      'Implemented cryptographic EvidenceChain™ verification systems with SHA-256 audit trails, achieving 99.2% tool success rates across 7 distributed calls',
+      'Deployed production infrastructure across Vercel, Render, Supabase, and HuggingFace Spaces with sub-100ms latency and zero operational cost',
     ],
-    highlights: ['SaaS Founder', 'ML Scoring Pipeline', 'Real-time Streaming', 'Anti-Cheat Detection', 'Zero-Cost DevOps'],
+    highlights: ['LangGraph', 'Groq', 'PostgreSQL', 'SHA-256', 'EU AI Act', 'FastAPI', 'React 18', 'Docker'],
   },
   {
-    title: 'AI Systems Architect',
-    company: 'Orion – AI Operations Layer',
-    period: '2026',
-    type: 'Flagship Project',
-    isNew: true,
-    description: [
-      'Architected production-grade agentic pipeline with MCP orchestration coordinating 5 enterprise systems across financial, HR, and data platforms',
-      'Engineered LangGraph state-machine with HITL breakpoints, PostgreSQL state persistence, and real-time observability via Langfuse',
-      'Achieved 1.7s wall-time performance across 7 distributed tool calls with 99.2% success rate and automated error recovery',
-      'Implemented comprehensive evaluation suite using RAGAS (0.93 score) with 85%+ test coverage via pytest and Docker containerization',
-    ],
-    highlights: ['LangGraph', 'FastMCP', 'PostgreSQL', 'Langfuse', 'RAGAS', 'HITL', 'Docker'],
-  },
-  {
-    title: 'AI Verification Engineer',
-    company: 'Nexus AI – Enterprise Intelligence Verification',
-    period: '2026',
-    type: 'Flagship Project',
-    isNew: true,
-    description: [
-      'Designed self-correcting LangGraph workflows validating business claims against SEC EDGAR, Companies House, GDELT, and web sources',
-      'Built multi-source evidence aggregation system with automated conflict resolution and PostgreSQL audit trails for regulatory compliance',
-      'Engineered FastAPI backend with Pydantic v2 validation, Redis caching, and Kubernetes deployment pipeline',
-      'Integrated human-in-the-loop escalation for low-confidence claims with comprehensive decision logging and metrics tracking',
-    ],
-    highlights: ['LangGraph', 'FastAPI', 'PostgreSQL', 'Kubernetes', 'Multi-Source Verification', 'Self-Correction'],
-  },
-  {
-    title: 'Compliance AI Engineer',
-    company: 'THEMIS – EU AI Act Compliance Intelligence',
-    period: '2026',
-    type: 'Flagship Project',
-    isNew: true,
-    isFlagship: true,
-    description: [
-      'Built production-grade EU AI Act compliance engine processing regulatory documents through 6-node LangGraph pipelines with SHA-256 EvidenceChain™ cryptographic proof',
-      'Engineered HyDE + RRF + CrossEncoder RAG system indexing 96 EU AI Act articles simultaneously with GDPR and NIST AI RMF compliance layers',
-      'Optimized compliance analysis from 6 weeks manual audit → 48 minutes automated via Groq inference with sub-2min end-to-end processing',
-      'Deployed live on IBM watsonx.ai TechDoc validation platform with SSE streaming and WebSocket HITL interrupt/resume workflows',
-    ],
-    highlights: ['EvidenceChain™ SHA-256', 'LangGraph', 'HyDE+RRF', 'Groq', 'EU AI Act', 'HITL Workflows', 'Live Production'],
-  },
-  {
-    title: 'AI Software Engineer – Production-Ready',
-    company: 'Agentic RAG Project',
-    period: '2026',
-    type: 'Personal Project',
-    description: [
-      'Engineered state-machine cyclic reasoning graph using LangGraph with self-correction loop eliminating 35% retrieval hallucinations',
-      'Integrated LangSmith for granular trace observability and RAGAS for automated Faithfulness/Answer Relevancy scoring',
-      'Optimized latency to 234ms and cut inference costs by 42% through Redis Semantic Cache layer',
-      'Established robust CI/CD pipeline via GitHub Actions with 85% test coverage (Pytest) and secure Docker containerization',
-    ],
-    highlights: ['LangGraph', 'LLMOps', 'CI/CD', 'Performance Optimization'],
-  },
-  {
-    title: 'Full-Stack Engineer Intern',
-    company: 'Wafa Immobilier (Banking Group)',
-    period: 'Feb 2025 – July 2025',
-    type: 'Professional Experience',
+    title: 'Full Stack Engineer Intern',
+    company: 'Wafa Immobilier · Banking Group',
+    period: 'Feb–Jul 2025',
     description: [
       'Led refactoring of mission-critical Mortgage Loan Management system in high-security banking environment',
       'Engineered and secured RESTful APIs using OAuth2/JWT protocols ensuring strict data privacy and compliance',
       'Built scalable backend services with Spring Boot & Hibernate and interactive frontends with Angular',
       'Optimized complex Oracle/MySQL schemas and ensured code quality through JUnit integration testing in Agile Scrum',
     ],
-    highlights: [
-      'Spring Boot',
-      'Angular',
-      'OAuth2/JWT',
-      'Agile Scrum',
-      'Banking Security',
+    highlights: ['Spring Boot', 'Angular', 'OAuth2/JWT', 'Agile Scrum', 'Banking Security'],
+  },
+  {
+    title: 'Full Stack Developer Intern',
+    company: 'Smart Prog SARL',
+    period: 'Jun–Sep 2023',
+    description: [
+      'Developed full-stack web applications with modern frameworks and databases',
+      'Implemented responsive UIs and scalable backend services',
+      'Collaborated with team on feature development and code quality',
+      'Gained experience in production deployment and DevOps practices',
     ],
+    highlights: ['Full Stack', 'Web Development', 'Databases', 'DevOps'],
   },
 ];
 
@@ -150,8 +96,6 @@ export function Experience() {
                     <p className="text-accent font-semibold">{exp.company}</p>
                     <span className="hidden sm:inline text-border">•</span>
                     <p className="text-muted-foreground text-sm">{exp.period}</p>
-                    <span className="hidden sm:inline text-border">•</span>
-                    <Badge variant="outline" className="w-fit">{exp.type}</Badge>
                   </div>
                 </div>
 

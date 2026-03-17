@@ -30,6 +30,37 @@ export function ThemisShowcase() {
           </p>
         </div>
 
+        {/* Screenshot Tabs */}
+        <div className="mb-12">
+          <h3 className="text-sm font-mono text-accent mb-6 uppercase tracking-wider">Production Interfaces</h3>
+          <div className="bg-card border border-border/30 rounded-lg overflow-hidden">
+            {/* Tabs */}
+            <div className="flex border-b border-border/30">
+              <button className="flex-1 px-6 py-3 text-sm font-medium text-accent border-b-2 border-accent hover:bg-card/50 transition-colors">
+                Upload Interface
+              </button>
+              <button className="flex-1 px-6 py-3 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-card/30 transition-colors">
+                Live Analysis
+              </button>
+              <button className="flex-1 px-6 py-3 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-card/30 transition-colors">
+                Architecture
+              </button>
+            </div>
+
+            {/* Image - Upload */}
+            <div className="aspect-video bg-black/40 relative overflow-hidden">
+              <img
+                src="/themis-screenshot-upload.jpg"
+                alt="THEMIS Upload Interface - PDF drop zone with framework selectors"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div className="px-6 py-3 border-t border-border/30 bg-card/30">
+              <p className="text-xs text-muted-foreground">Upload any AI system documentation PDF — supports EU AI Act, GDPR, NIST AI RMF frameworks</p>
+            </div>
+          </div>
+        </div>
+
         {/* Grid: Architecture + EvidenceChain */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
           {/* Left: Architecture SVG representation */}
